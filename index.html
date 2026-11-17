@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NexGaming13 | Moje projekty</title>
+
+<meta name="description" content="NexGaming13 - moje gry, projekty i aplikacje.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b16;
+    color: white;
+}
+
+header {
+    background: #121225;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292448;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    color: #a47aff;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a47aff;
+}
+
+.hero {
+    min-height: 420px;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(ellipse at center,
+        #38216b 0%, #17152c 40%, #0b0b16 80%);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin-bottom: 20px;
+    text-shadow: 0 0 25px #713cff;
+}
+
+.hero h1 span {
+    color: #a47aff;
+}
+
+.hero p {
+    color: #c5c5d5;
+    max-width: 550px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    background: #713cff;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: #925fff;
+    transform: translateY(-3px);
+}
+
+.projects {
+    padding: 75px 8%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #9999b0;
+    margin-bottom: 35px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151527;
+    border: 1px solid #292448;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #8956ff;
+    box-shadow: 0 10px 35px #713cff22;
+}
+
+.card-image {
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    background: linear-gradient(135deg, #32205e, #131b38);
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaaabe;
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 65px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 15px;
+    background: #292047;
+    color: #b99aff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.card-button {
+    display: block;
+    margin-top: 20px;
+    background: #713cff;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.card-button:hover {
+    background: #925fff;
+}
+
+.about {
+    padding: 65px 20px;
+    text-align: center;
+    background: #121225;
+}
+
+.about h2 {
+    color: #a47aff;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.about p {
+    color: #aaaabe;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #77778c;
+    font-size: 13px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .projects {
+        padding: 50px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXGAMING13</div>
+
+    <nav>
+        <a href="#">Start</a>
+        <a href="#projects">Projekty</a>
+        <a href="#about">O mnie</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Witaj w <span>NexGaming13!</span></h1>
+
+    <p>
+        Witaj na mojej stronie!
+        Znajdziesz tutaj moje gry, projekty
+        internetowe i aplikacje.
+        Odkrywaj, testuj i baw się dobrze!
+    </p>
+
+    <a href="#projects" class="hero-button">
+        ZOBACZ MOJE PROJEKTY
+    </a>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="section-title">🎮 Moje projekty</h2>
+
+    <p class="section-description">
+        Sprawdź, co udało mi się stworzyć!
+    </p>
+
+    <div class="project-grid">
+
+        <!-- PROJEKT 1 -->
+
+        <div class="card">
+
+            <div class="card-image">
+                🟦
+            </div>
+
+            <div class="card-content">
+
+                <h3>OBBY CUBE 3D</h3>
+
+                <p>
+                    Gra platformowa 3D, w której
+                    skaczesz po platformach,
+                    omijasz przeszkody i zdobywasz
+                    kolejne poziomy.
+                </p>
+
+                <span class="tag">GRA 3D</span>
+
+                <a class="card-button"
+                   href="https://nexgaming13.github.io/Obby-Cube-3D/">
+                    ZAGRAJ TERAZ →
+                </a>
+
+            </div>
+        </div>
+
+        <!-- PROJEKT 2 -->
+
+        <div class="card">
+
+            <div class="card-image">
+                🌐
+            </div>
+
+            <div class="card-content">
+
+                <h3>NexGaming Site</h3>
+
+                <p>
+                    Moja strona gamingowa.
+                    Miejsce poświęcone moim
+                    projektom i gamingowej pasji.
+                </p>
+
+                <span class="tag">STRONA WWW</span>
+
+                <a class="card-button"
+                   href="https://nexgaming13.github.io/NexGaming-Site/">
+                    ODWIEDŹ STRONĘ →
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <h2>O NexGaming13</h2>
+
+    <p>
+        NexGaming13 to miejsce, w którym
+        publikuję własne projekty, gry
+        i eksperymenty programistyczne.
+        To dopiero początek!
+    </p>
+
+</section>
+
+<footer>
+    © 2026 NexGaming13. Wszystkie prawa zastrzeżone.
+</footer>
+
+</body>
+</html>
